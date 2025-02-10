@@ -1,0 +1,10 @@
+Create a new pandas dataframe with the following data:'HadCRUT-global-monthly.csv'
+The dataframe contains the following columns: 'Time', 'Anomaly (deg C)', 'Uncertainty (deg C)', 'Lower bound (deg C)', 'Upper bound (deg C)'.
+The column 'Time' that contains a date in YYYY-MM format. Split this into two columns, one for years and one for months.
+Create a new dataframe that uses the data from the current one. 
+The new dataframe should have columns for each of the months and rows for each year. 
+The cells should contain the 'Anomaly (deg C)' values.
+Create a new column in the new dataframe for the summer temperature that is the average of the months 06, 07, and 08 (i.e. June, July and August).
+Draw a Plotly Express bar chart of summer temperatures over each year.
+Use the plotly_white template, change the size to 800 x 600 and use the 'inferno' color scheme.
+Turn the x-axis labels 45 degrees and only show a label for every 10th year.
