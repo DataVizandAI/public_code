@@ -1,0 +1,6 @@
+lines.linewidth: 2          # Set line width to 2
+figure.facecolor: eff3ff    # Set figure background color
+axes.facecolor: bdd7e7      # Set axes background color
+font.size: 14               # Set font size to 14
+text.color: 08519c          # Set text color
+axes.labelcolor: 08519c     # set the axes labels
