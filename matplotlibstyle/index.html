@@ -1,0 +1,93 @@
+<h1 id="how-to-style-matplotlib-plots-and-charts">How to Style
+Matplotlib Plots and Charts</h1>
+<h2
+id="customize-your-pandas-plots-with-off-the-shelf-style-sheets---or-design-your-own">Customize
+your Pandas plots with off-the shelf style sheets - or design
+your own</h2>
+<p><img src="styles_files/6styles.png" /></p>
+<p>Web sites, publications and news sources all have their own styles.
+Take a look at the financial data published by, say, the BBC or The
+NewYork Times. Or polling data on Nate Silver’s FiveThirtyEight web
+site. They each have a clear and consistent look.</p>
+<p>We are going to look at how we can achieve something similar with our
+Pandas charts and plots. First, by using the built-in styles that are
+available to us and then by looking at how we can create our own
+customizations.</p>
+<p>The default style renders a line graph like the image, below. It’s a
+clean-looking image but there are several more built-in styles if you
+prefer something different.</p>
+<p><img src="styles_files/default.png" /></p>
+<p>The styles available a stored in a list in the <em>Mathplotlib</em>
+library. First, we need to import the library and, we’ll import
+<em>numpy</em> at the same time as we will use this shortly.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div>
+<p>The styles are in <code>plt.style.available</code> - the code below
+prints a neat list of the styles.</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>styles <span class="op">=</span> plt.style.available</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> style <span class="kw">in</span> styles:</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(style)</span></code></pre></div>
+<pre><code>Solarize_Light2
+_classic_test_patch
+_mpl-gallery
+_mpl-gallery-nogrid
+bmh
+classic
+dark_background
+fast
+fivethirtyeight
+ggplot
+grayscale
+petroff10
+seaborn-v0_8
+seaborn-v0_8-bright
+seaborn-v0_8-colorblind
+seaborn-v0_8-dark
+seaborn-v0_8-dark-palette
+seaborn-v0_8-darkgrid
+seaborn-v0_8-deep
+seaborn-v0_8-muted
+seaborn-v0_8-notebook
+seaborn-v0_8-paper
+seaborn-v0_8-pastel
+seaborn-v0_8-poster
+seaborn-v0_8-talk
+seaborn-v0_8-ticks
+seaborn-v0_8-white
+seaborn-v0_8-whitegrid
+tableau-colorblind10</code></pre>
+<p>Above is the list from my installation which is the version 3.10.0 of
+Matplotlib.</p>
+<p>Many of the styles have been created for the plotting package Seaborn
+but you can use them with any plotting library that is based on
+mathplotlib.</p>
+<p>Other styles are emulations of other plotting systems or web sites.
+The ggplot style is based on the the ggplot2 library that is commonly
+used in the R language.</p>
+<p>Below there is a function that can be used to explore the different
+styles. It is a function that generates some pseudo-random data and then
+plots a line graph in Matplotlib. We can pass a style as a parameter to
+it.</p>
+<p>Two Numpy sequences are created for the two axes <code>x</code> and
+<code>y</code>. <code>x</code> is created using
+<code>np.linspace(0, 10, 100)</code>, which generates 100 evenly spaced
+values between 0 and 10. <code>y</code> is created by taking the sine of
+<code>x</code> values and adding some random noise to it using
+<code>np.random.normal(0, 0.1, 100)</code>, which generates 100 random
+values from a normal distribution with a mean of 0 and a standard
+deviation of 0.1.</p>
+<p>The result example use shows a plot with the
+<code>seaborn-v0_8</code> style.</p>
+<p>Here what the <code>ggplot</code> style looks like.</p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>plot_with_style(<span class="st">&#39;ggplot&#39;</span>)</span></code></pre></div>
+<figure>
+<img src="styles_files/styles_10_0.png" alt="png" />
+<figcaption aria-hidden="true">png</figcaption>
+</figure>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>matplotlib.__version__</span></code></pre></div>
+<pre><code>&#39;3.10.0&#39;</code></pre>
