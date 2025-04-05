@@ -4,7 +4,7 @@ Let AI take the strain
 
 This article is available on Substack and Medium. Click on one of the links below.
 
-[Substack]() - [Medium]()
+[Substack](https://technofile.substack.com/p/data-analysis-and-visualization-with) - [Medium](https://medium.com/ai-advances/data-analysis-and-visualization-with-gemini-and-google-colab-df29f32d3fd5)
 
 
 Files to support the article.
