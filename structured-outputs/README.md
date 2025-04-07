@@ -4,7 +4,7 @@
 
 This article is available on Substack and Medium. Click on one of the links below.
 
-[Substack](https://technofile.substack.com/p/structured-outputs-for-consistent) - [Medium]()
+[Substack](https://technofile.substack.com/p/structured-outputs-for-consistent) - [Medium](https://medium.com/ai-advances/structured-outputs-for-consistent-llm-responses-c340a6addccc)
 
 
 Files to support the article.
