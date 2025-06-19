@@ -1,15 +1,14 @@
-# Simplicity as a Strategy: Why OpenAI's Agent SDK Gets It Right
+# Build Multi-Agent Apps with OpenAI’s Agent SDK
 
-### Build multi-agent systems with elegance, not complexity
+## Creating multi-agent apps is simple with this open-source SDK, and it can be used with any OpenAI-compatible LLM
 
-This article is available on Substack and Medium. Click on one of the links below (they will appear when the article is published)
-
-[Substack]() - [Medium]()
+*Links to the article will be included after publication.*
 
 Files to support the article.
 
-``openAI-agents.ipynb`` - the initial examples are in this file they include simple agents, using tools and handoffs
-``agents-as-tools.ipynb`` - this notebook contains the last example that uses agents as tools.
+``st?.py`` - these are the examples from the article in order of appearance
+
+``*.ipynb`` - these are initial versions of the code in Notebooks
 
 ---
 
