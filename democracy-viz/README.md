@@ -2,7 +2,6 @@
 
 ## Design choices for clarity of presentation when there are too many data points
 
-[Medium](https://medium.com/p/4f3bb5ae35f9/edit) [Substack](https://technofile.substack.com/p/visualizing-democracy)
 
 Files to support the article.
 
