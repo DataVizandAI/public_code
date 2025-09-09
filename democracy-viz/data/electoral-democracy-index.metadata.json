@@ -1,0 +1,35 @@
+{
+  "chart": {
+    "title": "Electoral democracy index",
+    "subtitle": "Based on the expert estimates and index by [V-Dem](#dod:v-dem). It captures to which extent political leaders are elected under comprehensive voting rights in free and fair elections, and freedoms of association and expression are guaranteed. It ranges from 0 to 1 (most democratic).",
+    "citation": "V-Dem (2025)",
+    "originalChartUrl": "https://ourworldindata.org/grapher/electoral-democracy-index?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "World",
+      "Argentina",
+      "Australia",
+      "Botswana",
+      "China"
+    ]
+  },
+  "columns": {
+    "Electoral democracy index (best estimate, aggregate: average)": {
+      "titleShort": "Electoral democracy index",
+      "titleLong": "Electoral democracy index - (best estimate, aggregate: average)",
+      "descriptionShort": "Best estimate of the extent to which political leaders are elected under comprehensive suffrage in free and fair elections, and freedoms of association and expression are guaranteed.",
+      "descriptionProcessing": "The regional aggregates (including values for the World) have been estimated by averaging the country values.",
+      "unit": "",
+      "timespan": "1789-2024",
+      "type": "Numeric",
+      "owidVariableId": 1015692,
+      "shortName": "electdem_vdem__estimate_best__aggregate_method_average",
+      "lastUpdated": "2025-03-17",
+      "nextUpdate": "2026-03-17",
+      "citationShort": "V-Dem (2025) – processed by Our World in Data",
+      "citationLong": "V-Dem (2025) – processed by Our World in Data. “Electoral democracy index – (best estimate, aggregate: average)” [dataset]. V-Dem, “Democracy report v15” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1015692.metadata.json"
+    }
+  },
+  "dateDownloaded": "2025-04-12",
+  "activeFilters": {}
+}
